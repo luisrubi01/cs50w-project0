@@ -1,4 +1,6 @@
 .ctn-h1{
     width: 200px;
     height: 48px;
+    margin: 0 auto;
+    justify-content: center;
 }
