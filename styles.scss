@@ -5,8 +5,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: darkgray; /* Agrega esta línea para cambiar el fondo */
 }
 
+ctn-text{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 header {
     background-color: $primary-color;
     color: white;
@@ -37,6 +44,7 @@ main {
     
     .recipe {
         border: 1px solid #ccc;
+        border-radius: 10px;
         margin-bottom: 20px;
         padding: 20px;
         
@@ -45,14 +53,12 @@ main {
         }
         
         img {
-            max-width: 100%;
+            max-width: 50%;
+            margin-left: 20%;
+            transform: translateX(340px);
+
         }
     }
 }
 
-footer {
-    background-color: $secondary-color;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
+
