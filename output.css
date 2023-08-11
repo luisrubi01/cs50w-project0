@@ -34,22 +34,181 @@ header nav ul li a {
   text-decoration: none;
 }
 
-main {
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.container .ctn-text {
+  text-align: left;
+}
+.container main .recipe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.container main .recipe h2 {
+  margin-bottom: 5px;
+}
+.container main .recipe h2 a {
+  text-decoration: none;
+}
+.container main .recipe .recipe-content {
+  display: flex;
+  align-items: center;
+}
+.container main .recipe .recipe-content img {
+  margin-right: 10px;
+  margin-left: auto; /* Mueve la imagen hacia la derecha */
+  margin-top: 10px; /* Agrega un margen superior para separar de h2 */
+}
+.container main .recipe .recipe-content p {
+  margin: 0;
+}
+.container main .recipe .recipe-content p a {
+  text-decoration: none;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
   padding: 20px;
 }
-main .recipe {
-  border: 1px solid #ccc;
-  border-radius: 10px;
+
+/* Barra de navegación */
+.navbar {
   margin-bottom: 20px;
+}
+
+/* Contenido principal */
+.ctn-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Contenido principal */
+main .recipe {
   padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
 }
 main .recipe h2 {
-  margin-top: 0;
+  margin-bottom: 10px;
 }
-main .recipe img {
-  max-width: 50%;
-  margin-left: 50%;
-  transform: translateX(600px);
+main .recipe h2 a {
+  text-decoration: none;
+}
+main .recipe .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+}
+main .recipe .img-container .img-fluid {
+  max-width: 100%; /* Hace que la imagen sea responsiva en ancho */
+  max-height: 100%; /* Hace que la imagen sea responsiva en altura */
+  width: auto; /* Evita estirar la imagen */
+  height: auto; /* Evita estirar la imagen */
+}
+main .recipe p {
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  background-color: #f8f9fa;
+}
+footer .d-flex {
+  justify-content: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+footer a.link-secondary {
+  color: #6c757d;
+}
+footer .container {
+  text-align: center;
+  margin-top: 20px;
+}
+footer .container h6 {
+  margin-bottom: 10px;
+}
+footer .container p {
+  margin: 0;
+}
+
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; /* Eliminamos margen del body para evitar desplazamientos */
+  padding: 0; /* Eliminamos padding del body */
+}
+
+/* Barra de navegación */
+.navbar {
+  margin-bottom: 20px;
+}
+
+/* Contenido principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centramos horizontalmente en todas las pantallas */
+  padding: 20px;
+  min-height: 100vh; /* Establecemos altura mínima para asegurar que el contenido ocupe al menos el viewport */
+}
+.container .ctn-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.container main .recipe {
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.container main .recipe h2 {
+  margin-bottom: 10px;
+}
+.container main .recipe h2 a {
+  text-decoration: none;
+}
+.container main .recipe .img-fluid {
+  margin-top: 10px;
+  max-width: 100%;
+}
+.container main .recipe p {
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  background-color: #f8f9fa;
+}
+footer .d-flex {
+  justify-content: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+footer a.link-secondary {
+  color: #6c757d;
+}
+footer .container {
+  text-align: center;
+  margin-top: 20px;
+}
+footer .container h6 {
+  margin-bottom: 10px;
+}
+footer .container p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=output.css.map */

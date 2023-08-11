@@ -38,28 +38,210 @@ header {
         }
     }
 }
-
-main {
-    padding: 20px;
-    
-    .recipe {
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        padding: 20px;
-        
-        h2 {
-            margin-top: 0;
-        }
-        
-        img {
-            max-width: 50%;
-            margin-left: 50%;
-            transform: translateX(600px);
-            
-
-        }
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  
+    .ctn-text {
+      text-align: left;
     }
+  
+    main {
+      .recipe {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+  
+        h2 {
+          margin-bottom: 5px;
+          a {
+            text-decoration: none;
+          }
+        }
+  
+        .recipe-content {
+          display: flex;
+          align-items: center;
+  
+          img {
+            margin-right: 10px;
+            margin-left: auto; /* Mueve la imagen hacia la derecha */
+            margin-top: 10px; /* Agrega un margen superior para separar de h2 */
+          }
+  
+          p {
+            margin: 0;
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
 }
 
+.container {
+  padding: 20px;
+}
 
+/* Barra de navegación */
+.navbar {
+  margin-bottom: 20px;
+}
+
+/* Contenido principal */
+.ctn-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+/* Contenido principal */
+main {
+    .recipe {
+      padding: 20px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+  
+      h2 {
+        margin-bottom: 10px;
+        a {
+          text-decoration: none;
+        }
+      }
+  
+      .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
+  
+        .img-fluid {
+          max-width: 100%; /* Hace que la imagen sea responsiva en ancho */
+          max-height: 100%; /* Hace que la imagen sea responsiva en altura */
+          width: auto; /* Evita estirar la imagen */
+          height: auto; /* Evita estirar la imagen */
+        }
+      }
+  
+      p {
+        margin-top: 10px;
+      }
+    }
+  }
+  
+
+/* Footer */
+footer {
+  padding: 20px 0;
+  background-color: #f8f9fa;
+  
+  .d-flex {
+    justify-content: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  a.link-secondary {
+    color: #6c757d;
+  }
+
+  .container {
+    text-align: center;
+    margin-top: 20px;
+
+    h6 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Eliminamos margen del body para evitar desplazamientos */
+    padding: 0; /* Eliminamos padding del body */
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    margin-bottom: 20px;
+  }
+  
+  /* Contenido principal */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centramos horizontalmente en todas las pantallas */
+    padding: 20px;
+    min-height: 100vh; /* Establecemos altura mínima para asegurar que el contenido ocupe al menos el viewport */
+    
+    .ctn-text {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    main {
+      .recipe {
+        padding: 20px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+  
+        h2 {
+          margin-bottom: 10px;
+          a {
+            text-decoration: none;
+          }
+        }
+  
+        .img-fluid {
+          margin-top: 10px;
+          max-width: 100%;
+        }
+  
+        p {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+  
+    .d-flex {
+      justify-content: center;
+      justify-content: space-between;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+  
+    a.link-secondary {
+      color: #6c757d;
+    }
+  
+    .container {
+      text-align: center;
+      margin-top: 20px;
+  
+      h6 {
+        margin-bottom: 10px;
+      }
+  
+      p {
+        margin: 0;
+      }
+    }
+  }
+  
