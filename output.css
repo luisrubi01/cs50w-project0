@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: darkgray; /* Agrega esta línea para cambiar el fondo */
+  background-color: gray; /* Agrega esta línea para cambiar el fondo */
 }
 
 ctn-text {
@@ -68,6 +68,7 @@ header nav ul li a {
 }
 .container main .recipe .recipe-content p a {
   text-decoration: none;
+  color: solid black;
 }
 
 /* Estilos generales */
@@ -101,6 +102,7 @@ main .recipe h2 {
 }
 main .recipe h2 a {
   text-decoration: none;
+  color: solid black;
 }
 main .recipe .img-container {
   display: flex;

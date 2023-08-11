@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: darkgray; /* Agrega esta línea para cambiar el fondo */
+    background-color: gray; /* Agrega esta línea para cambiar el fondo */
 }
 
 ctn-text{
@@ -75,6 +75,7 @@ header {
             margin: 0;
             a {
               text-decoration: none;
+              color: solid black;
             }
           }
         }
@@ -112,6 +113,7 @@ main {
         margin-bottom: 10px;
         a {
           text-decoration: none;
+          color: solid black;
         }
       }
   
