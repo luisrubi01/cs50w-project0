@@ -2,150 +2,92 @@ $primary-color: #3498db;
 $secondary-color: #e74c3c;
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: gray; /* Agrega esta línea para cambiar el fondo */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: gray;
 }
 
-ctn-text{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.ctn-text {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 header {
-    background-color: $primary-color;
-    color: white;
-    padding: 20px;
-    
-    h1 {
-        margin: 0;
-    }
-    
-    nav ul {
-        list-style: none;
-        padding: 0;
-        
-        li {
-            display: inline;
-            margin-right: 20px;
-            
-            a {
-                color: white;
-                text-decoration: none;
-            }
-        }
-    }
-}
-.container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-  
-    .ctn-text {
-      text-align: left;
-    }
-  
-    main {
-      .recipe {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-  
-        h2 {
-          margin-bottom: 5px;
-          a {
-            text-decoration: none;
-          }
-        }
-  
-        .recipe-content {
-          display: flex;
-          align-items: center;
-  
-          img {
-            margin-right: 10px;
-            margin-left: auto; /* Mueve la imagen hacia la derecha */
-            margin-top: 10px; /* Agrega un margen superior para separar de h2 */
-          }
-  
-          p {
-            margin: 0;
-            a {
-              text-decoration: none;
-              color: solid black;
-            }
-          }
-        }
+  background-color: $primary-color;
+  color: white;
+  padding: 20px;
+
+  h1 {
+    margin: 0;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      display: inline;
+      margin-right: 20px;
+
+      a {
+        color: white;
+        text-decoration: none;
       }
     }
   }
-
-  /* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
 }
 
 .container {
-  padding: 20px;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-/* Barra de navegación */
-.navbar {
-  margin-bottom: 20px;
-}
-
-/* Contenido principal */
-.ctn-text {
-  text-align: center;
-  margin-bottom: 20px;
-}
-/* Contenido principal */
-main {
+  main {
     .recipe {
-      padding: 20px;
+      padding: 10px;
       border: 1px solid #ccc;
       margin-bottom: 20px;
-  
+
       h2 {
         margin-bottom: 10px;
         a {
           text-decoration: none;
-          color: solid black;
+          color: #000;
         }
       }
-  
+
       .img-container {
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
-  
+        overflow: hidden;
+
         .img-fluid {
-          max-width: 100%; /* Hace que la imagen sea responsiva en ancho */
-          max-height: 100%; /* Hace que la imagen sea responsiva en altura */
-          width: auto; /* Evita estirar la imagen */
-          height: auto; /* Evita estirar la imagen */
+          max-width: 100%;
+          max-height: 100%;
+          width: auto;
+          height: auto;
         }
       }
-  
+
       p {
         margin-top: 10px;
       }
     }
   }
-  
+}
 
 /* Footer */
 footer {
   padding: 20px 0;
   background-color: #f8f9fa;
-  
+
   .d-flex {
     justify-content: center;
-    justify-content: space-between;
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd;
   }
@@ -167,83 +109,54 @@ footer {
     }
   }
 }
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0; /* Eliminamos margen del body para evitar desplazamientos */
-    padding: 0; /* Eliminamos padding del body */
+
+/* Media Queries */
+@media only screen and (min-width: 576px) {
+  header {
+    padding: 10px;
   }
-  
-  /* Barra de navegación */
-  .navbar {
-    margin-bottom: 20px;
-  }
-  
-  /* Contenido principal */
+
   .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centramos horizontalmente en todas las pantallas */
-    padding: 20px;
-    min-height: 100vh; /* Establecemos altura mínima para asegurar que el contenido ocupe al menos el viewport */
-    
-    .ctn-text {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-  
-    main {
-      .recipe {
-        padding: 20px;
-        border: 1px solid #ccc;
-        margin-bottom: 20px;
-  
-        h2 {
-          margin-bottom: 10px;
-          a {
-            text-decoration: none;
-          }
-        }
-  
-        .img-fluid {
-          margin-top: 10px;
-          max-width: 100%;
-        }
-  
-        p {
-          margin-top: 10px;
-        }
-      }
+    padding: 10px;
+  }
+
+  main {
+    .recipe {
+      padding: 15px;
     }
   }
-  
-  /* Footer */
-  footer {
-    padding: 20px 0;
-    background-color: #f8f9fa;
-  
-    .d-flex {
-      justify-content: center;
-      justify-content: space-between;
-      padding-bottom: 20px;
-      border-bottom: 1px solid #ddd;
-    }
-  
-    a.link-secondary {
-      color: #6c757d;
-    }
-  
-    .container {
-      text-align: center;
-      margin-top: 20px;
-  
-      h6 {
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    align-items: flex-start;
+  }
+
+  main {
+    .recipe {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+
+      h2 {
         margin-bottom: 10px;
+        a {
+          text-decoration: none;
+        }
       }
-  
+
+      .img-container {
+        width: 40%;
+        padding: 10px;
+
+        .img-fluid {
+          margin-top: 0;
+        }
+      }
+
       p {
-        margin: 0;
+        margin-top: 0;
       }
     }
   }
-  
+}

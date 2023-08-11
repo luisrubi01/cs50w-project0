@@ -1,12 +1,11 @@
-@charset "UTF-8";
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: gray; /* Agrega esta línea para cambiar el fondo */
+  background-color: gray;
 }
 
-ctn-text {
+.ctn-text {
   position: relative;
   top: 50%;
   left: 50%;
@@ -36,141 +35,12 @@ header nav ul li a {
 
 .container {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.container .ctn-text {
-  text-align: left;
-}
-.container main .recipe {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-.container main .recipe h2 {
-  margin-bottom: 5px;
-}
-.container main .recipe h2 a {
-  text-decoration: none;
-}
-.container main .recipe .recipe-content {
-  display: flex;
-  align-items: center;
-}
-.container main .recipe .recipe-content img {
-  margin-right: 10px;
-  margin-left: auto; /* Mueve la imagen hacia la derecha */
-  margin-top: 10px; /* Agrega un margen superior para separar de h2 */
-}
-.container main .recipe .recipe-content p {
-  margin: 0;
-}
-.container main .recipe .recipe-content p a {
-  text-decoration: none;
-  color: solid black;
-}
-
-/* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  padding: 20px;
-}
-
-/* Barra de navegación */
-.navbar {
-  margin-bottom: 20px;
-}
-
-/* Contenido principal */
-.ctn-text {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Contenido principal */
-main .recipe {
-  padding: 20px;
-  border: 1px solid #ccc;
-  margin-bottom: 20px;
-}
-main .recipe h2 {
-  margin-bottom: 10px;
-}
-main .recipe h2 a {
-  text-decoration: none;
-  color: solid black;
-}
-main .recipe .img-container {
-  display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
-}
-main .recipe .img-container .img-fluid {
-  max-width: 100%; /* Hace que la imagen sea responsiva en ancho */
-  max-height: 100%; /* Hace que la imagen sea responsiva en altura */
-  width: auto; /* Evita estirar la imagen */
-  height: auto; /* Evita estirar la imagen */
-}
-main .recipe p {
-  margin-top: 10px;
-}
-
-/* Footer */
-footer {
-  padding: 20px 0;
-  background-color: #f8f9fa;
-}
-footer .d-flex {
-  justify-content: center;
-  justify-content: space-between;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ddd;
-}
-footer a.link-secondary {
-  color: #6c757d;
-}
-footer .container {
-  text-align: center;
-  margin-top: 20px;
-}
-footer .container h6 {
-  margin-bottom: 10px;
-}
-footer .container p {
-  margin: 0;
-}
-
-/* Estilos generales */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0; /* Eliminamos margen del body para evitar desplazamientos */
-  padding: 0; /* Eliminamos padding del body */
-}
-
-/* Barra de navegación */
-.navbar {
-  margin-bottom: 20px;
-}
-
-/* Contenido principal */
-.container {
-  display: flex;
   flex-direction: column;
-  align-items: center; /* Centramos horizontalmente en todas las pantallas */
-  padding: 20px;
-  min-height: 100vh; /* Establecemos altura mínima para asegurar que el contenido ocupe al menos el viewport */
-}
-.container .ctn-text {
-  text-align: center;
-  margin-bottom: 20px;
 }
 .container main .recipe {
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #ccc;
   margin-bottom: 20px;
 }
@@ -179,10 +49,19 @@ body {
 }
 .container main .recipe h2 a {
   text-decoration: none;
+  color: #000;
 }
-.container main .recipe .img-fluid {
-  margin-top: 10px;
+.container main .recipe .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.container main .recipe .img-container .img-fluid {
   max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
 }
 .container main .recipe p {
   margin-top: 10px;
@@ -195,7 +74,6 @@ footer {
 }
 footer .d-flex {
   justify-content: center;
-  justify-content: space-between;
   padding-bottom: 20px;
   border-bottom: 1px solid #ddd;
 }
@@ -211,6 +89,45 @@ footer .container h6 {
 }
 footer .container p {
   margin: 0;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 576px) {
+  header {
+    padding: 10px;
+  }
+  .container {
+    padding: 10px;
+  }
+  main .recipe {
+    padding: 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    align-items: flex-start;
+  }
+  main .recipe {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  main .recipe h2 {
+    margin-bottom: 10px;
+  }
+  main .recipe h2 a {
+    text-decoration: none;
+  }
+  main .recipe .img-container {
+    width: 40%;
+    padding: 10px;
+  }
+  main .recipe .img-container .img-fluid {
+    margin-top: 0;
+  }
+  main .recipe p {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
