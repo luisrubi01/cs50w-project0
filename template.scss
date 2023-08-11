@@ -39,27 +39,4 @@ header {
     }
 }
 
-main {
-    padding: 20px;
-    
-    .recipe {
-        border: 1px solid #ccc;
-        border-radius: 10px;
-        margin-bottom: 20px;
-        padding: 20px;
-        
-        h2 {
-            margin-top: 0;
-        }
-        
-        img {
-            max-width: 50%;
-            margin-left: 20%;
-            transform: translateX(500px);
-            
-
-        }
-    }
-}
-
 
