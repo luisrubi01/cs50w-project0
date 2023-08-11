@@ -48,8 +48,8 @@ main .recipe h2 {
 }
 main .recipe img {
   max-width: 50%;
-  margin-left: 20%;
-  transform: translateX(340px);
+  margin-left: 50%;
+  transform: translateX(600px);
 }
 
 /*# sourceMappingURL=output.css.map */
