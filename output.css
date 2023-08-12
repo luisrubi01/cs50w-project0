@@ -14,6 +14,10 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+#text {
+  font-size: larger;
+}
+
 header {
   background-color: #3498db;
   color: white;
